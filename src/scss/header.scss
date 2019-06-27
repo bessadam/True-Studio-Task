@@ -1,0 +1,86 @@
+.header {
+
+    &__headerTop {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        background-color: $grayL;
+    }
+
+    &__img {
+        width: 21px;
+        height: 13px;
+    }
+
+    &__topBlock {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__dilerItem {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__ItemsInfo {
+        padding-left: 5px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-family: $toyotaTR;
+        color: $grayTxt;
+        line-height: 16px;
+    }
+
+    &__dilerItem:not(:last-child):after {
+        display: flex;
+        padding-right: 22px;
+        content: '';
+        width: 0;
+        height: 10px;
+        border-right: 2px solid rgba(152, 157, 165, 0.6);
+    }
+
+    &__dilerItem:first-child {
+        padding-left: 0;
+    }
+
+
+    &__bottomBlock {
+        display: flex;
+        align-items: center;
+        max-height: 81px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__imgLogo {
+        width: 50px;
+        height: 41px;
+        margin-right: 80px;
+    }
+
+    &__itemsMenu {
+        margin: 0;
+        margin-right: 52px;
+        padding: 28px 15px 30px 15px;
+        font-size: 14px;
+        font-family: $toyotaTR;
+        color: $grayTxtD;
+
+    }
+
+    &__itemsMenu:hover {
+        border-top: 4px solid $red;
+    }
+
+    .btn {
+        margin-left: auto;
+    }
+
+}

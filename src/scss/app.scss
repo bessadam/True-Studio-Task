@@ -1,0 +1,74 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "header";
+@import "plugins";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: $toyotaTR;
+}
+
+.wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    //width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    width: calc(100% - 35px);
+
+    @include below($mobileB) {
+        width: calc(100% - 20px);
+    }
+
+    @include below($mobile) {
+        width: calc(100% - 15px);
+    }
+}
+
+input, textarea, button, select {
+    outline: none;
+}
+
+input, select {
+    border: none;
+    border-bottom: 1px solid #A8A9AD;
+    padding-bottom: 15px;
+    cursor: pointer;
+    background: transparent;
+}
+
+img {
+    width: 100%;
+}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width:auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+
+

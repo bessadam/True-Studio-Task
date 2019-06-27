@@ -1,0 +1,25 @@
+include ../templates/bemto/bemto
+include ../templates/header
+
+
+-
+    const pageSettings = {
+    title: '',
+    useSocialMetaTags: false
+    }
+
+-const jv0 = 'javascript:void(0)';
+
+block vars
+
+doctype html
+html(lang='ru')
+    include ../templates/head
+
+    body
+        .wrapper
+            +header()
+            block content
+
+    script(src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous")
+    script(src="./js/app.js")

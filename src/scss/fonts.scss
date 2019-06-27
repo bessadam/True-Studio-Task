@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Toyota Text Regular';
+    src: url('../fonts/ToyotaText-Regular.eot');
+    src: local('../fonts/Toyota Text'), local('ToyotaText-Regular'),
+    url('../fonts/ToyotaText-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ToyotaText-Regular.woff') format('woff'),
+    url('../fonts/ToyotaText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Toyota Text Bold';
+    src: url('../fonts/ToyotaText-Bold.eot');
+    src: local('Toyota Text Bold'), local('ToyotaText-Bold'),
+    url('../fonts/ToyotaText-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ToyotaText-Bold.woff') format('woff'),
+    url('../fonts/ToyotaText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Toyota Display Bold';
+    src: url('../fonts/ToyotaDisplay-Bold.eot');
+    src: local('../fonts/Toyota Display Bold'), local('ToyotaDisplay-Bold'),
+    url('../fonts/ToyotaDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ToyotaDisplay-Bold.woff') format('woff'),
+    url('../fonts/ToyotaDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Toyota Display Regular';
+    src: url('../fonts/ToyotaDisplay-Regular.eot');
+    src: local('Toyota Display'), local('ToyotaDisplay-Regular'),
+    url('../fonts/ToyotaDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ToyotaDisplay-Regular.woff') format('woff'),
+    url('../fonts/ToyotaDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
