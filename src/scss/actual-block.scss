@@ -1,0 +1,129 @@
+.main-block {
+  display: flex;
+  width: 820px;
+  margin: 0 auto;
+}
+
+.actual-block {
+  overflow: hidden;
+
+  &-title {
+    margin-top: 38px;
+    margin-bottom: 20px;
+
+    color: $mainColor;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  &-posts {
+    display: flex;
+
+    overflow: hidden;
+
+    .posts-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      margin-right: 20px;
+      border-radius: 20px;
+
+
+      background-color: #fff;
+
+      &__gray {
+        padding: 20px;
+        margin-right: 10px;
+        margin-bottom: 32px;
+
+        background-color: #F5F7F8;
+        border-radius: 20px;
+      }
+
+      &__user-info {
+        display: flex;
+        align-items: center;
+        width: 180px;
+        margin: 0 auto;
+
+        .user-info-avatar {
+          margin-right: 8px;
+        }
+
+        .user-info__data{
+          &-username {
+            color: #4643D3;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 140%;
+          }
+
+          &-time {
+            font-size: 13px;
+            line-height: 140%;
+            color: #9DA1A6;
+          }
+        }
+      }
+
+      &-content {
+        width: 180px;
+        margin: 0 auto;
+
+        &__title {
+          margin-top: 20px;
+          margin-bottom: 10px;
+
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 140%;
+        }
+
+        &__text {
+          margin-bottom: 25px;
+
+          font-size: 14px;
+          line-height: 140%;
+          color: #222222;
+        }
+
+        &__feedback {
+          display: flex;
+          justify-content: space-between;
+
+          .feedback-comments {
+            display: flex;
+  
+            &__icon {
+              margin-right: 5.5px;
+            }
+          }
+
+          .feedback-ratings {
+            display: flex;
+            justify-content: space-between;
+  
+            &__likes {
+              display: flex;
+              margin-right: 11.5px;
+  
+              &-icon {
+                margin-right: 5.5px;
+              }
+            }
+  
+            &__dislikes {
+              display: flex;
+  
+              &-icon {
+                margin-right: 5.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

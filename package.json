@@ -30,6 +30,7 @@
   "dependencies": {
     "es6-object-assign": "^1.1.0",
     "magnific-popup": "^1.1.0",
+    "node-sass": "^4.14.1",
     "object-fit-polyfill": "^0.1.0",
     "selectric": "^1.13.0",
     "swiper": "^4.5.0"

@@ -3,16 +3,21 @@
 @import "fonts";
 @import "header";
 @import "plugins";
+@import "actual-block";
+@import "sidebar-block";
+@import "content-block";
 
 * {
     box-sizing: border-box;
+
 }
 
 body {
     margin: 0;
     padding: 0;
 
-    font-family: $toyotaTR;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f0f0;
 }
 
 .wrapper {
@@ -23,6 +28,7 @@ body {
     height: 100%;
 
     overflow: hidden;
+
 }
 
 h1 {
@@ -31,7 +37,7 @@ h1 {
 }
 
 .container {
-    //width: 100%;
+    width: 100%;
     max-width: 1260px;
     margin: 0 auto;
     width: calc(100% - 35px);
@@ -69,6 +75,8 @@ img {
     max-width: 500px;
     margin: 20px auto;
 }
+
+
 
 
 

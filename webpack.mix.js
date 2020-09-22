@@ -17,12 +17,12 @@ const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
  */
 
 mix.sass('src/scss/app.scss', 'dist/css/').options({processCssUrls: false});
-mix.pug('src/*.pug', '../dist', {
-    pug: {
-        pretty: true,
-    }
-});
-mix.js('src/js/app.js', 'dist/js/');
+// mix.pug('src/*.pug', '../dist', {
+//     pug: {
+//         pretty: true,
+//     }
+// });
+// mix.js('src/js/app.js', 'dist/js/');
 //
 // .extract(['jquery', 'selectric', 'swiper', 'autosize', 'magnific-popup', 'inputmask']);
 //

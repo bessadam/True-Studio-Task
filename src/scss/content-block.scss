@@ -1,0 +1,302 @@
+.content-block-feed {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  margin-left: 20px;
+  margin-top: 40px;
+
+
+  &__post {
+    margin-bottom: 40px;
+    padding: 20px;
+
+    border-radius: 20px;
+    background: #FFFFFF;
+    
+    .post-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__userinfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-avatar {
+          margin-right: 20px;
+
+          &__default {
+            margin-right: 12px;
+            padding: 10px;
+
+            border-radius: 50%;
+            background-color: #4643D3;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 140%;
+          }
+        }
+
+        &-data {
+          margin-right: 20px;
+
+          .userinfo-data-username {
+            color: #4643D3;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 140%;
+          }
+
+          .userinfo-data-time {
+            font-size: 13px;
+            line-height: 140%;
+            color: #9DA1A6;
+          }
+        }
+
+        &-status {
+          display: flex;
+          align-items: center;
+          margin-bottom: 15px;
+          padding: 4px 10px;
+
+          border-radius: 6px;   
+          background: #FFE99A;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 9px;
+          line-height: 140%;
+
+          &__time {
+            margin-left: 6px;
+
+            text-transform: none;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 140%;
+            color: $mainColor;
+          }
+        }
+      }
+
+      &__useritems {
+        display: flex;
+      }
+    }
+
+    .post-title {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+
+      color: $mainColor;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 140%;
+    }
+
+    .post-text {
+      color: $mainColor;
+      font-size: 14px;
+      line-height: 140%;
+    }
+
+    .post-images {
+      display: flex;
+      margin: 20px 0;
+
+      &__foto {
+        margin-right: 10px;
+      }
+    }
+
+    .post-feedback {
+      display: flex;
+      justify-content: space-between;
+
+      &__comments {
+        display: flex;
+
+        &-icon {
+          margin-right: 8px;
+        }
+      }
+
+      &__ratings {
+        display: flex;
+
+        &-likes {
+          display: flex;
+          margin-right: 22px;
+
+          &-icon {
+            margin-right: 6px;
+          }
+        }
+
+        &-dislikes {
+          display: flex;
+          margin-right: 10px;
+
+          &-icon {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    .post-comments {
+      margin-top: 25px;
+
+      border-top: 1px solid #DDDDDD;
+  
+      &__more {
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+  
+        &-block {
+          display: flex;
+          justify-content: center;
+  
+          &-btn {
+            padding: 17px 152px;
+
+            border: none;
+            border-radius: 48px;
+            background: #F5F7F8;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            color: #9DA1A6;
+          }
+        }
+
+        &-comment {
+          display: flex;
+          margin-top: 23px;
+
+          &__avatar {
+            margin-right: 9px;
+          }
+
+          .comment-body {
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+
+            border-radius: 20px;
+            background: #F5F7F8;
+
+            &__user {
+              display: flex;
+              justify-content: space-between;
+
+              &-info {
+                display: flex;
+                padding-top: 14px;
+
+                &__username {
+                  margin-right: 10px;
+
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 14px;
+                  line-height: 140%;
+                  color: #4643D3;
+                }
+
+                &__time {
+                  font-size: 14px;
+                  line-height: 140%;
+                  color: #9DA1A6;
+                }
+              }
+            }
+
+            &__text {
+              padding-bottom: 15px;
+              font-size: 14px;
+              line-height: 140%;
+              color: #222222;
+            }
+
+            &__feedback {
+              display: flex;
+              justify-content: space-between;
+              padding-bottom: 19px;
+              align-items: center;
+
+              &-answer {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 14px;
+                color: #9DA1A6;
+              }
+
+              &-ratings {
+                display: flex;
+
+                &__likes {
+                  display: flex;
+                  margin-right: 20px;
+
+                  &-icon {
+                    margin-right: 6px;
+                  }
+                }
+
+                &__dislikes {
+                  display: flex;
+
+                  &-icon {
+                    margin-right: 6px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .post-add-comment {
+      display: flex;
+      align-items: center;
+      padding-top: 39px;
+      padding-bottom: 12px;
+
+      &__placeholder {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 12px;
+        border: 1px solid #DDDDDD;
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 446px;
+        height: 48px;
+
+        &-text {
+          // font-family: Google Sans;
+          padding-left: 20px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 14px;
+          color: #9DA1A6;
+        }
+
+        &-icon {
+          margin-right: 3px;
+          background-color: $mainBgColor;
+          border-radius: 50%;
+          padding: 12px 12px;
+        }
+      }
+    }
+  }
+}
